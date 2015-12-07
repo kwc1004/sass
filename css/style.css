@@ -1,0 +1,105 @@
+/* This css is genernated by kwc ver 0.0.1. */
+/* style.scss */
+/* navbar width Auto calculator */
+html, body, ul, li, div, nav, aside, section, article, header, footer, a {
+  margin: 0;
+  padding: 0; }
+
+.col-xl-1 {
+  width: 8.33333%; }
+
+.col-xl-2 {
+  width: 16.66667%; }
+
+.col-xl-3 {
+  width: 25%; }
+
+.col-xl-4 {
+  width: 33.33333%; }
+
+.col-xl-5 {
+  width: 41.66667%; }
+
+.col-xl-6 {
+  width: 50%; }
+
+.col-xl-7 {
+  width: 58.33333%; }
+
+.col-xl-8 {
+  width: 66.66667%; }
+
+.col-xl-9 {
+  width: 75%; }
+
+.col-xl-10 {
+  width: 83.33333%; }
+
+.col-xl-11 {
+  width: 91.66667%; }
+
+.col-xl-12 {
+  width: 100%; }
+
+.main_footer {
+  -moz-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  -webkit-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  box-shadow: 0px 4px 5px #666, 2px 6px 10px #999; }
+
+.content {
+  background-color: lightgray;
+  display: inline-block; }
+  .content article:first-child {
+    background-color: lightgreen;
+    float: left; }
+  .content article:last-child {
+    background-color: lightyellow;
+    float: left; }
+  .content:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .content {
+    height: 1px; }
+
+.main_footer {
+  width: 300px;
+  border: 1px solid;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
+
+#navbar {
+  width: 700px;
+  height: 50px;
+  background-color: gray; }
+  #navbar ul {
+    list-style-type: none;
+    line-height: 46px; }
+  #navbar li {
+    float: left;
+    margin: 0;
+    width: 167.5px; }
+    #navbar li:not(:last-child) {
+      margin-right: 10px; }
+    #navbar li a {
+      font-weight: bold;
+      display: block;
+      color: #000;
+      text-decoration: none;
+      text-align: center;
+      padding: 0 10px;
+      background-color: #d976e0;
+      border: 2px solid;
+      margin-left: 0px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      border-radius: 8px; }
+      #navbar li a:hover {
+        background-color: #e5a0e9; }
+
+/*# sourceMappingURL=style.css.map */

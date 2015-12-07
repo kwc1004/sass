@@ -1,0 +1,77 @@
+$version:"0.0.1";
+/* This css is genernated by kwc ver #{$version}. */
+/* style.scss */
+/* navbar width Auto calculator */
+@import "./scss/initial";
+@import './scss/rounded';
+@import "./scss/col_xl_width";
+//test
+@mixin box-shadow($shadows...){
+	-moz-box-shadow: $shadows;
+	-webkit-box-shadow: $shadows;
+	box-shadow: $shadows;
+}
+.main_footer{
+	@include box-shadow(0px 4px 5px #666,2px 6px 10px #999);
+}
+@mixin clearfix{
+	display: inline-block;
+	&:after{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	* html & {height: 1px;}
+}
+.content{
+	background-color: lightgray;
+	article{
+		&:first-child{
+			background-color:lightgreen;float:left;
+		}
+		&:last-child{
+			background-color:lightyellow;float:left;
+		}
+	}
+	@include clearfix;
+}
+.main_footer{
+	width:300px;
+	border:1px solid;
+	@include rounded(20px);
+}
+#navbar {
+	$navbar_width:700px;
+	$navbar_color:#ce4dd6;
+	$navbar_item:4;
+  	$navbar_margin:10px;
+  	$navbar_height:50px;
+	$navbar_border_width:2px;
+  width: $navbar_width;
+  height: $navbar_height;
+  background-color: gray;
+  	ul { 
+  		list-style-type: none; 
+  		line-height:$navbar_height - $navbar_border_width * 2;
+  	} 
+  	li { 
+    	float: left; margin:0;
+    	width:($navbar_width - $navbar_margin * ($navbar_item - 1))/$navbar_item ;
+    	&:not(:last-child){margin-right:10px;}
+    a { 
+    	font-weight: bold; 
+    	display: block;
+    	color:#000;
+    	text:{decoration: none; align:center;}
+    	
+    	padding: 0 10px;
+    	background-color: lighten($navbar_color,10%);	
+    	&:hover{background-color:lighten($navbar_color,20%);}
+    	border:$navbar_border_width solid;
+    	margin:{left:0px;}
+		@include rounded(8px);
+    }
+  }
+}

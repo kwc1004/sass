@@ -1,0 +1,7 @@
+$step: 100% / 12;
+
+@for $i from 1 through 12{
+	.col-xl-#{$i} {
+		width: $i * $step;
+	}
+}
